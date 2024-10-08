@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection Paper on Data Privacy and Cyber Awareness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: url('CSDP.png') repeat scroll;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: gray;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4296e1;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #e5e5e5;
+        }
+
+        .word-count {
+            font-size: 1.2em;
+            color: #007bff;
+            margin: 10px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #e5e5e5;
+        }
+
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #007bff;
+        }
+    </style>
+    <script type="text/javascript" src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Reflection Paper on Data Privacy and Cyber Awareness</h1>
+            <b><div class="word-count">506 Words</div></b>
+        </div>
+        <div id="content"></div>
+        <div id="message" class="message"></div>
+    </div>
+
+    <py-script>
+        # Content of the reflection paper
+        paragraphs = [
+            "I enjoyed the time listening to the seminar on data privacy and cyber awareness since it educated us on the importance of being more aware and cautious about our personal information, not only in terms of protecting our own privacy but also in how we browse and interact throughout the internet. The insights shared were eye-opening, reminding us that every click, what we see online, or online interaction could expose us to risks if not done responsibly. It made me realize the significance of regularly updating passwords, understanding privacy settings on social media, and recognizing potential online threats like phishing scams, cyber abuse, and more. Ultimately, the seminar empowered us to take proactive steps to protect our digital identity in an ever-evolving online world.",
+            "The seminar also shed light on the growing threats of cybercrimes and the risks of getting exposed with your own personal details publicly. We were made aware of how cybercriminals use tactics like identity theft, hacking, and phishing to exploit personal information, often from seemingly innocent online activities. Posting detailed personal information publicly such as our location, daily routines, or sensitive data can make us easy targets for cybercriminals who can misuse that information for fraudulent activities. The risks of interacting with unknown individuals online were emphasized, particularly regarding catfishing, online scams, and even more serious threats like cyberstalking and harassment. The session reminded us that maintaining a cautious and skeptical attitude while engaging with the online world is essential to minimizing the potential dangers lurking behind the screen.",
+            "I found myself particularly intrigued by the discussions surrounding the complexities of data privacy and the evolving nature of cyber threats. It’s fascinating how something as routine as browsing the web or posting a photo can expose us to various risks, and how many of us unknowingly leave behind a digital footprint that can be traced and exploited. The seminar raised questions in my mind about how much control we truly have over our personal information once it’s online, and how companies, social media platforms, and even governments handle the vast amounts of data we generate. The growing sophistication of cybercrimes and the constant battle between privacy protection and data collection also left me thinking about the ethical dimensions of digital surveillance and how we can strike a balance between convenience and security in an increasingly interconnected world.",
+            "To summarize things about my reflection on this seminar, the seminar on data privacy and cyber awareness was highly informative and relevant, especially for someone like me, a BSCS-DS student who will be deeply involved in the digital landscape. It reinforced the importance of protecting personal information and being vigilant in an online world full of risks. I now have a greater appreciation for cybersecurity practices and feel more equipped to navigate the internet with caution, understanding the potential threats that come with sharing data and interacting online. I commend the organizers for a well-rounded and engaging seminar, and I’m motivated to apply these insights to ensure I maintain a safer online presence moving forward."
+        ]
+
+        # Initialize the content
+        content = Element('content')
+        
+        # Display all paragraphs
+        for paragraph in paragraphs:
+            content.element.innerHTML += f"<p>{paragraph}</p>"
+
+        # Update message
+        message = Element('message')
+        message.element.innerHTML = "Data Privacy and Cyber Awareness Campaign"
+    </py-script>
+</body>
+
+</html>
